@@ -16,6 +16,7 @@ public class C01_PageClassFaceBookTest {
         // POM’a uygun olarak email, sifre kutularini ve giris yap
         // butonunu locate edin
         FacebookPage facebookPage = new FacebookPage();
+        facebookPage.cookieButonu.click();
         // Faker class’ini kullanarak email ve sifre degerlerini
         Faker faker = new Faker();
         facebookPage.email.sendKeys(faker.internet().emailAddress());
