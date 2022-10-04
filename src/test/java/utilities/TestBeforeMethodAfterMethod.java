@@ -19,7 +19,7 @@ public abstract class TestBeforeMethodAfterMethod {
     protected String tarih;
 
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"grp1","grp2"})
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -31,7 +31,7 @@ public abstract class TestBeforeMethodAfterMethod {
         actions = new Actions(driver);
 
     }
-    @AfterMethod
+    @AfterMethod(groups = {"grp1","grp2"})
     public void tearDown() {
         //driver.close();
     }

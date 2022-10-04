@@ -13,7 +13,7 @@ public class C03_PositiveTest {
 Page classımızdan bir obje oluşturarak, oluşturmuş olduğumuz obje ile
 page classımızdaki locate'lerimize ulaşabiliriz
  */
-    @Test
+    @Test (groups = "grp2")
     public void test01() {
         //https://www.hotelmycamp.com/ adresine git  login butonuna bas
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
